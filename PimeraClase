@@ -1,0 +1,51 @@
+from tkinter import *
+import time
+
+def click_raton(evento):
+    x = evento.x
+    y = evento.y
+    print( "has hecho click en:")
+    print("x: " + str(x))
+    print("y: " + str(y))
+    
+    
+    
+    if x >= 728 and x <= 735 and y >= 81 and y <= 94:
+        print("FELICIDADES HAS ADIVINADO UN ERROR")
+        
+    elif x >= 1018 and x <= 1042 and y >= 159 and y <= 170:
+        print("FELICIDADES HAS ADIVINADO UN ERROR")
+        
+    elif x >= 1005 and x <= 1017 and y >= 404 and y <= 413:
+        print("FELICIDADES HAS ADIVINADO UN ERROR")
+        
+    elif x >= 1057 and x <= 1080 and y >= 415 and y <= 433:
+        print("FELICIDADES HAS ADIVINADO UN ERROR")
+        
+    elif x >= 756 and x <= 795 and y >= 379 and y <= 391: 
+        
+        print("FELICIDADES HAS ADIVINADO UN ERROR")
+    
+        window.title("Felicidades has adivinado todos los Errores")
+    
+    else:
+        print("FALLASTE")
+        
+
+
+ 
+
+#end click_raton
+
+ventana = Tk() 
+canvas = Canvas(ventana,width = 600, height = 200)
+canvas.pack(expand = YES, fill = BOTH)
+imagen = PhotoImage(file = "images.png")
+canvas.create_image(0,0, image = imagen, anchor = NW )
+
+
+ventana.geometry("1150x450")
+ventana.title("ADIVINA LAS DIFERENCIAS PINCHANDO EN LA IMAGEN DE LA DERECHA")
+ventana.bind("<Button 1>", click_raton)
+ventana.mainloop()
+window = Tk()  
