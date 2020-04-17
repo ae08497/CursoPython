@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventana_principal</class>
+ <widget class="QMainWindow" name="ventana_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>411</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ESTA ES MI APP
+PARA APLICACION 
+DE REVISTAS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRevistas">
+    <property name="title">
+     <string>Revistas</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="submenu_inicio"/>
+    <addaction name="submenu_registrar_revistas"/>
+    <addaction name="submenu_listar_revistas"/>
+    <addaction name="submenu_list_widget"/>
+    <addaction name="submenu_table_widget"/>
+   </widget>
+   <addaction name="menuRevistas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="submenu_inicio">
+   <property name="text">
+    <string>Inicio</string>
+   </property>
+  </action>
+  <action name="submenu_registrar_revistas">
+   <property name="text">
+    <string>Insertar Revistas</string>
+   </property>
+  </action>
+  <action name="submenu_listar_revistas">
+   <property name="text">
+    <string>Listar Revistas</string>
+   </property>
+  </action>
+  <action name="submenu_list_widget">
+   <property name="text">
+    <string>Listado con list widget</string>
+   </property>
+  </action>
+  <action name="submenu_table_widget">
+   <property name="text">
+    <string>Listado con Table widget</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
